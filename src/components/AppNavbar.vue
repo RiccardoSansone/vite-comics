@@ -67,7 +67,7 @@ export default {
 
             <div class="container-menu">
                 <a v-for="item in items" href="#">
-                    <span class="color-blu" v-if="item.active">{{ item.message }}</span>
+                    <span id="active" class="color-blu" v-if="item.active">{{ item.message }}</span>
                     <span class="color-black" v-else>{{ item.message }}</span>
                 </a>
             </div>

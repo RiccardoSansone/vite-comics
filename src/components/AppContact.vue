@@ -17,7 +17,7 @@ export default {
 
     <div class="container d-flex align-center">
 
-        <h1 style="color: white;">CONTENT GOES HERE</h1>
+        <h3 style="color: white;">Content goes here</h3>
 
     </div>
 

@@ -2,6 +2,7 @@
 import AppNavbar from './components/AppNavbar.vue';
 import AppContact from './components/AppContact.vue';
 import AppMenu from './components/AppMenu.vue';
+import AppDc from './components/AppDc.vue'
 
 export default {
   data() {
@@ -11,7 +12,8 @@ export default {
   components: {
     AppNavbar,
     AppContact,
-    AppMenu
+    AppMenu,
+    AppDc
   }
 }
 </script>
@@ -25,6 +27,8 @@ export default {
   <AppContact></AppContact>
 
   <AppMenu></AppMenu>
+
+  <AppDc></AppDc>
 
 </template>
 
