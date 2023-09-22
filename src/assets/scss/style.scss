@@ -26,6 +26,21 @@
 .bg-dark{
     background-color: black;
 }
+.color-blu{
+    color: paleturquoise;
+}
+.color-black{
+    color: black;
+}
+.bg-blu{
+    background-color: blue;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.gap-1{
+    gap: 1rem;
+}
 // #endregion Utility
 
 
@@ -55,12 +70,6 @@ nav{
         text-decoration: none;
     }
 }
-.color-blu{
-    color: paleturquoise;
-}
-.color-black{
-    color: black;
-}
 nav{
     background-color: wheat;
 }
@@ -70,5 +79,16 @@ nav{
 
 
 // #region Content
+#menu{
+    height: 150px;
+    img{
+        width: 30px;
+        object-fit: contain;
+    }
+    div{
+        font-size: x-small;
+        color: white;
+    }
+}
 // #endregion Content
 
