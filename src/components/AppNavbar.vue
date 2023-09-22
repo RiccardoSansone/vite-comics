@@ -5,6 +5,48 @@ export default {
     name: 'AppNavbar',
     data() {
         return {
+            items: [
+                {
+                    message:'CHARACTERS',
+                    active: false
+                },
+                {
+                    message:'COMICS',
+                    active: true
+                },
+                {
+                    message:'MOVIES',
+                    active: false
+                },
+                {
+                    message:'TV',
+                    active: false
+                },
+                {
+                    message:'GAMES',
+                    active: false
+                },
+                {
+                    message:'COLLECTIBLES',
+                    active: false
+                },
+                {
+                    message:'VIDEOS',
+                    active: false
+                },
+                {
+                    message:'FANS',
+                    active: false
+                },
+                {
+                    message:'NEWS',
+                    active: false
+                },
+                {
+                    message:'SHOP',
+                    active: false
+                }
+            ]
         }
     }
 }
@@ -24,16 +66,10 @@ export default {
             </div>
 
             <div class="container-menu">
-                <a href="#">CHARACTERS</a>
-                <a href="#">COMIMCS</a>
-                <a href="#">MOVIES</a>
-                <a href="#">TV</a>
-                <a href="#">GAMES</a>
-                <a href="#">COLLECTIBLES</a>
-                <a href="#">VIDEOS</a>
-                <a href="#">FANS</a>
-                <a href="#">NEWS</a>
-                <a href="#">SHOP</a>
+                <a v-for="item in items" href="#">
+                    <span class="color-blu" v-if="item.active">{{ item.message }}</span>
+                    <span class="color-black" v-else>{{ item.message }}</span>
+                </a>
             </div>
 
         </div>
