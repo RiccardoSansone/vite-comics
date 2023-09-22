@@ -50,11 +50,16 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    a{
+    a, span{
         font-size: xx-small;
         text-decoration: none;
-        color: black;
     }
+}
+.color-blu{
+    color: paleturquoise;
+}
+.color-black{
+    color: black;
 }
 nav{
     background-color: wheat;
