@@ -11,6 +11,7 @@
     width: 75%;
     height: 100%;
     margin: auto;
+    z-index: 99;
 }
 .d-flex{
     display: flex;
@@ -35,8 +36,6 @@
 }
 .bg-blu{
     background-color: #0282f9;
-    position: fixed;
-    z-index: 1;
     width: 100%;
 }
 .justify-around{
@@ -53,6 +52,32 @@
 }
 .gap-05{
     gap: 0.5rem;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.col-2{
+    width: calc(100% / 12 * 2 - 1rem);
+    img{
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+    small{
+        color: white;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+}
+.bg-gray{
+    padding: 2rem 0;
+    background-color: #303030;
+    width: 100%;
+    // margin-top: 10rem
+}
+.jumbotron{
+    padding-top: 16rem;
+    position: relative;
 }
 // #endregion Utility
 
@@ -104,8 +129,41 @@ nav{
         color: white;
     }
 }
+.content{
+    width: 100%;
+    background-image: url(../img/jumbotron.jpg);
+    background-size: cover;
+    background-position: top;
+}
+.btn-1{
+    position: absolute;
+    left: 8.5rem;
+    top: 14.8rem;
+    width: 170px;
+    font-size: large;
+    font-weight: 600;
+    color: white;
+    background-color: #0282f9;
+    padding: 0.5rem 0.7rem;
+    border: none;
+}
+.btn-2{
+    width: 120px;
+    font-size: small;
+    font-weight: 600;
+    color: white;
+    background-color: #0282f9;
+    padding: 0.5rem 0.7rem;
+    border: none;
+    text-align: center;
+}
+#load{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 // #endregion Content
-
 
 
 
@@ -113,17 +171,12 @@ nav{
 #dc {
     height: 300px;
     width: 100%;
-    background-image: url('../img/footer-bg.jpg');
     background-repeat: no-repeat;
     object-fit: cover;
+    position: relative;
     .col-6{
         width: calc(100% / 12 * 6);
         height: 100%;
-        position: relative;
-        img{
-            width: 350px;                    
-            object-fit: contain;
-        };
         .col-4{
             width: calc(100% / 12 * 4);
             display: flex;
@@ -140,6 +193,26 @@ nav{
         }
     }
 }
+.bg{
+    object-fit: inherit;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.dcimg{
+    width: 360px;                    
+    object-fit: contain;
+    position: absolute;
+    z-index: -1;
+    right: 15rem;
+    top: -2rem;
+}
 // #endregion dc
 
 
@@ -148,10 +221,7 @@ nav{
 // #region footer
 footer{
     width: 100%;
-    height: 300px;
     background-color: #303030;
-    position: fixed;
-    z-index: 1;
     #footer{
         padding: 2.5rem 0;
         button{

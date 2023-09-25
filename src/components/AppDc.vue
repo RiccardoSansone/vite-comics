@@ -14,7 +14,11 @@ export default {
 <template>
 
     <div id="dc">
-
+        <!-- sfondo -->
+        <img class="bg" src="../assets/img/footer-bg.jpg" alt="">
+        <!-- lato destro con img -->
+        <img class="dcimg" src="../assets/img/dc-logo-bg.png" alt="">
+        
         <div class="container d-flex">
             <!-- lato sinistro -->
             <div class="col-6 pt-6 d-flex">
@@ -53,12 +57,6 @@ export default {
                     <a href="#">DC Universe</a>
                     <a href="#">DCPower Visa</a>
                 </div>
-            </div>
-
-
-            <!-- lato destro con img -->
-            <div class="col-6">
-                <img src="../assets/img/dc-logo-bg.png" alt="">
             </div>
         </div>
     </div>
